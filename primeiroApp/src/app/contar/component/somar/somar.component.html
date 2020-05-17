@@ -6,7 +6,7 @@
           <div class="col-12">
             <div class="form-group">
                 <label for="">Valor Total</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" readonly [value]="pegaValor">
             </div>
           </div>
         </div>
@@ -15,12 +15,12 @@
 </div>
 <div class="row">
   <div class="col-4">
-    <button class="btn btn-primary btn-block">Lanche R$5,00</button>
+    <button class="btn btn-primary btn-block" (click)="calcular(5)">Lanche R$5,00</button>
   </div>
     <div class="col-4">
-    <button class="btn btn-primary btn-block">Bbida R$4,00</button>
+    <button class="btn btn-primary btn-block" (click)="calcular(4)">Bbida R$4,00</button>
   </div>
   <div class="col-4">
-    <button class="btn btn-primary btn-block">Sobremesa R$3,00</button>
+    <button class="btn btn-primary btn-block" (click)="calcular(3)">Sobremesa R$3,00</button>
   </div>
 </div>
